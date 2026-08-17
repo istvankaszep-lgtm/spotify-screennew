@@ -1,0 +1,1 @@
+I built a custom ESP32-based hardware controller featuring an ILI9341 320x240 TFT LCD screen and a rotary encoder with a push button. Powered via a USB-C interface with an integrated AMS1117 3.3V power regulator, this board connects to Wi-Fi to display track information and wirelessly control Spotify playback.
