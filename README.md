@@ -10,6 +10,8 @@ A custom ESP32-based hardware controller featuring an ILI9341 TFT display and a 
 3. Update your Wi-Fi credentials (`ssid`, `password`) and Spotify API credentials (`clientId`, `clientSecret`) in the code.
 4. Upload the code to your ESP32 board and connect power via USB-C.
 
+![Project Image](pcb.png)
+
 ## Features
 * **Spotify Integration:** Uses `SpotifyEsp32` to control playback (Next/Previous track, Play/Pause).
 * **Rotary Encoder Controls:** Turn the knob (GPIO 25, 26) to skip tracks and press the button (GPIO 27) for play/pause.
@@ -19,6 +21,7 @@ A custom ESP32-based hardware controller featuring an ILI9341 TFT display and a 
 ## How it works
 The project runs on an ESP32-WROOM-32 microcontroller. Upon boot, it connects to Wi-Fi and initializes the ILI9341 display. The `ESP32Encoder` library handles the rotary encoder inputs to trigger Spotify API calls (`spotify.nextTrack()`, `spotify.previousTrack()`) over a secure Wi-Fi client (`WiFiClientSecure`).
 
+![Project Image](schematic.png)
 
 ## 💰 Bill of Materials (BOM)
 "Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
